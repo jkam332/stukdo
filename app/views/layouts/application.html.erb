@@ -9,9 +9,22 @@
 <body>
 <%= render "layouts/header"%>
 <%-# render "layouts/hd" -%>
-<div class="container">
-<%= yield %>
-</div>
+<% if current_page?(root_path) %>
+    <% if content_for?(:jumbotron) %>
+      <div class="jumbotron">
+        <div class="container">
+          <%= yield :jumbotron %>
+        </div>
+      </div>
+    <% end %>
+    <% else %>
+      <div class="container">
+  <% end %>
+
+    <%= yield %>
+
+  </div> <!-- /container -->
+
 
 
 
