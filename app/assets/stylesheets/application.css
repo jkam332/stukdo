@@ -11,5 +11,23 @@
  * file per style scope.
  *
  *= require_tree .
+ *= require font-awesome
  *= require_self
  */
+
+.jumbotron{
+	position: relative;
+    background: #FF2F4F center center;
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.jumboSpace{
+	margin-top: -20px;
+}
+
+.jumbotron {
+	color: white;
+}
