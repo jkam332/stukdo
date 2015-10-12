@@ -46,3 +46,6 @@ gem "font-awesome-rails"
 
 #Simple Form
 gem 'simple_form'
+
+#Device
+gem 'devise'
